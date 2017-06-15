@@ -1,6 +1,2 @@
 
-let make children => {
-  ...(ReasonReact.statelessComponent "Child"),
-  render: fun _ _ =>
-    <div> children </div>
-}
+external make : ReasonReact.reactElement => ReasonReact.reactElement = "" [@@bs.val];
